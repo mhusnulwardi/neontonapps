@@ -1,4 +1,4 @@
-package com.example.neonton_apps;
+package com.example.neon;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

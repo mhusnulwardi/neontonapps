@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neon/Draw.dart';
 
 import './hal_rekomendasi.dart' as rekomendasi;
 import './hal_edukasi.dart' as edukasi;
@@ -36,26 +37,30 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     return new Scaffold(
       appBar: new AppBar(
         backgroundColor: Colors.lightBlueAccent,
-        leading: new Icon(Icons.list),
-        title: new Center(child: new Text("NEONTON"),),
-        actions: <Widget>[
-          new Icon(Icons.search)
-        ],
+       
+        title: new Center(
+          child: new Text("NEONTON"),
+        ),
+        actions: <Widget>[new Icon(Icons.search)],
         bottom: new TabBar(
           controller: controller,
           tabs: <Widget>[
             new Tab(
-              icon: new Icon(Icons.event), text: "Rekomendasi",
+              icon: new Icon(Icons.event),
+              text: "Rekomendasi",
             ),
             new Tab(
-              icon: new Icon(Icons.event), text: "Edukasi",
+              icon: new Icon(Icons.event),
+              text: "Edukasi",
             ),
             new Tab(
-              icon: new Icon(Icons.event), text: "Entertaiment",
+              icon: new Icon(Icons.event),
+              text: "Entertaiment",
             ),
           ],
         ),
       ),
+      drawer: Draw(),
       body: new TabBarView(
         controller: controller,
         children: <Widget>[

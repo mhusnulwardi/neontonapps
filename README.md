@@ -1,4 +1,4 @@
-# neonton_apps
+# neon
 
 A new Flutter project.
 
