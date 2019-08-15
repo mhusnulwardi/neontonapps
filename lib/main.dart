@@ -65,7 +65,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         controller: controller,
         children: <Widget>[
           new rekomendasi.Rekomendasi(),
-          new edukasi.Edukasi(),
+          new edukasi.HalEdukasi(),
           new entertaiment.Entertaiment(),
         ],
       ),
